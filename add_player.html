@@ -1,0 +1,61 @@
+<html>
+<head>
+    <title>IPL Cricket Team</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo"><a href="/"><img src="logo.png" alt="logo" /></a></div>
+            <div class="buttons">
+                <a href="add_team.html">Add Team</a>
+                <a href="add_player.html">Add Player</a>
+                <input type="text" name="search_player" id="search_player" placeholder="Team Name" /> <button type="button" id="search_button">Search</button>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <div class="container">
+            <h1>Add plyer</h1>
+            <form id="add_player_form" method="post">
+                    <input type="text" name="player_name" placeholder="Player Name" required /><br />
+                    <label>Select Team Icon: </label>
+                    <input type="file" name="player_icon" /><br />
+                    <label for="player image">upload Player Image:</label>
+                    <input type="file" id="player_image" name="player_image"><br />
+                    <label for="teams">Choose Team:</label>
+                    <select name="team" id="team">
+                      <option value="volvo">MI</option>
+                      <option value="saab">CSK</option>
+                      <option value="mercedes">KKR</option>
+                      <option value="audi">SH</option>
+                    </select><br /><br />
+                    <input type="text" name="price" placeholder="Price" required /><br /><br />
+                    <label for="playing_status">Playing Status</label>
+                    <select name="playing_status" id="playing_status">
+                      <option value="playing">Playing</option>
+                      <option value="on_bench">On Bench</option>
+                    </select><br /><br />
+                    <label for="role">Role</label>
+                    <select name="role" id="roles">
+                      <option value="bowler">Bowler</option>
+                      <option value="batsman">Batsman</option>
+                      <option value="all_rounder">All Rounder</option>
+                    </select><br /><br />
+             <input type="submit" id="add_player_submit" value="Submit">
+            </form>
+        </div>
+       
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div>Copyright &#169; 2022 Nettantra | All rights reserved</div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
